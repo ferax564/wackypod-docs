@@ -1,0 +1,121 @@
+/**
+ * WackyPod Documentation Theme
+ *
+ * Primary color: #ff6b9d
+ * Dark mode default
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  --ifm-color-primary: #ff6b9d;
+  --ifm-color-primary-dark: #ff4d88;
+  --ifm-color-primary-darker: #ff3e7e;
+  --ifm-color-primary-darkest: #ff1060;
+  --ifm-color-primary-light: #ff89b2;
+  --ifm-color-primary-lighter: #ff98bc;
+  --ifm-color-primary-lightest: #ffc6da;
+  --ifm-code-font-size: 95%;
+  --ifm-font-family-base: 'Plus Jakarta Sans', system-ui, -apple-system,
+    BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #ff6b9d;
+  --ifm-color-primary-dark: #ff4d88;
+  --ifm-color-primary-darker: #ff3e7e;
+  --ifm-color-primary-darkest: #ff1060;
+  --ifm-color-primary-light: #ff89b2;
+  --ifm-color-primary-lighter: #ff98bc;
+  --ifm-color-primary-lightest: #ffc6da;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-background-color: #1a1a2e;
+  --ifm-background-surface-color: #16213e;
+}
+
+/* Navbar styling */
+.navbar {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] .navbar {
+  background-color: #0f0f23;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+.footer--dark {
+  background-color: #0f0f23;
+}
+
+/* Code blocks */
+.prism-code {
+  border-radius: 8px;
+}
+
+/* Links */
+a:hover {
+  text-decoration: none;
+}
+
+/* Table styling */
+table {
+  display: table;
+  width: 100%;
+}
+
+table thead tr {
+  border-bottom: 2px solid var(--ifm-color-primary);
+}
+
+/* API method badges */
+.api-method {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  margin-right: 8px;
+}
+
+.api-method--get {
+  background-color: #61affe;
+  color: #fff;
+}
+
+.api-method--post {
+  background-color: #49cc90;
+  color: #fff;
+}
+
+.api-method--put {
+  background-color: #fca130;
+  color: #fff;
+}
+
+.api-method--patch {
+  background-color: #fca130;
+  color: #fff;
+}
+
+.api-method--delete {
+  background-color: #f93e3e;
+  color: #fff;
+}
+
+/* Sidebar category */
+.menu__list-item--collapsed .menu__link--sublist::after {
+  transform: rotate(-90deg);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Admonition customizations */
+.alert--info {
+  --ifm-alert-background-color: rgba(255, 107, 157, 0.1);
+  --ifm-alert-border-color: var(--ifm-color-primary);
+}
